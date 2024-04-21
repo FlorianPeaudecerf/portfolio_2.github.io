@@ -117,8 +117,8 @@ h2 {
     color: rgb(0, 0, 0);
     padding-top: 50px;
     padding-bottom: 50px;
-    margin-top: 150px;
-    margin-bottom: 150px;
+    margin-top: 100px;
+    margin-bottom: 50px;
     margin-left: 300px;
     margin-right: 300px;
 }
@@ -129,13 +129,13 @@ li {
     flex-direction: row;
     font-size: 30px;
     color: rgb(0, 0, 0);
-    padding-top: 
-    margin-top: 100px;
+    padding-top: 25px;
+    padding-bottom: 50px;
+    margin-top: 50px;
     margin-bottom: 100px;
-    margin-left: 50px;
+    margin-left: 100px;
     margin-right: 50px;
 }
-
 ul li {
     display: flex;
     justify-content: start;
@@ -143,18 +143,36 @@ ul li {
     flex-direction: row;
     font-size: 30px;
     color: rgb(0, 0, 0);
-    padding-top: 25px;
+    padding-top: 10px;
     padding-bottom: 25px;
-    margin-top: 100px;
+    margin-top: 50px;
     margin-bottom: 100px;
     margin-left: 50px;
     margin-right: 50px;
 }
-ul li::before {
+li::before {
     content: "\2022";
     color: rgb(14, 0, 211);
     font-weight: bold;
     display: inline-block;
     width: 1em;
     margin-left: -1em;
+  }
+form {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    font-size: 30px;
+    color: rgb(0, 0, 0);
+    padding-top: 50px;
+    padding-bottom: 50px;
+    margin-top: 50px;
+    margin-bottom: 100px;
+    margin-left: 600px;
+    margin-right: 600px;
+    padding-left: 80px;
+    padding-right: 25px;
 }

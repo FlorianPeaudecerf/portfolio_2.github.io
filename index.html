@@ -14,16 +14,16 @@
             <a href="#apropos" class="button-1">
                 <button class="navbutton">À propos</button></a>
 
-            <a href="formation" class="button-2">
+            <a href="#formation" class="button-2">
                 <button class="navbutton">Formations</button></a>
 
-            <a href="competences" class="button-3">
+            <a href="#competences" class="button-3">
                 <button class="navbutton">Compétences</button></a>
 
-            <a href="experiences" class="button-4">
+            <a href="#experiences" class="button-4">
                 <button class="navbutton">Expériences</button></a>
 
-            <a href="contact" class="button-5">
+            <a href="#contact" class="button-5">
                 <button class="navbutton">Contact</button></a>
         </nav>
         <section>
@@ -55,17 +55,17 @@
             <li>2024 - Développeur Back-End - SIMPLON LENS HAUT DE FRANCE</li><br>
             <li>2024 - Développeur Front-End - SIMPLON LENS HAUT DE FRANCE</li><br>
             <li>2024 - Développeur Intégrateur Web - SIMPLON LENS HAUT DE FRANCE</li><br>
-            <li>2018 - TP Transport de Voyageur Urbain et Interurbain - CENTRE DE FORMATION LABORDE HÉNIN BEAUMONT</li><br>
+            <li>2018 - TP Transport de Voyageur Urbain et Interurbain - CENTRE DE FORMATION LABORDE HÉNIN BEAUMONT</li>
+            <br>
         </ul>
     </section>
-    <section>
-        <h2>Compétences</h2>
-        <h3>Languages :</h3><br>
+    <section id="competences">
+        <h2>Compétences</h2><br>
         <li>HTML5</li>
         <li>CSS3</li>
         <li>Javascript</li>
     </section>
-    <section>
+    <section id="experiences">
         <h2>Expériences Professionnelles</h2>
         <ul>
             <li>2019/2023 - Préparateur de commande/Répprovisionneur - E.LECLERC DRIVE SECLIN</li><br>
@@ -73,9 +73,15 @@
             <li>2013/2015 - Chef de rang - Restaurant L'Assiette Au Boeuf ARRAS</li><br>
         </ul>
     </section>
-        
-    <footer>
-
+    <footer id="contact">
+        <form>
+            <label for="nom">Nom</label><br>
+            <input type="text" id="nom" name="nom" required><br>
+            <label for="email">Email</label><br>
+            <input type="email" id="email" name="email" required><br>
+            <label for="message">Message</label><br>
+            <textarea id="message" name="message" required></textarea><br>
+        </form>
     </footer>
 </body>
 
