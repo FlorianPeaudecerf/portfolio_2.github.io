@@ -1,13 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <title>Mon cv en ligne</title>
 </head>
-
 <body>
     <header>
         <nav>
@@ -82,6 +80,30 @@
             <label for="message">Message</label><br>
             <textarea id="message" name="message" required></textarea><br>
         </form>
+    <section>
+        <a href="https://github.com/FlorianPeaudecerf"><img src="githubcat.png"></a>
+        <a href="https://www.linkedin.com/in/florian-peaudecerf/"><img src="linkedin.png"></a>
+    </section>
+    <section>
+        <button onclick="scrollToTop()" id="btnScrollToTop">Haut de page</button>
+        <script>
+            function scrollToTop() {
+                window.scrollTo({
+                    top: 0,
+                    behavior: "smooth"
+                });
+            }
+
+
+            window.onscroll = function() {
+                if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                    document.getElementById("btnScrollToTop").style.display = "block";
+                } else {
+                    document.getElementById("btnScrollToTop").style.display = "none";
+                }
+            };
+        </script>
+    </section>
     </footer>
 </body>
 
