@@ -1,36 +1,38 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <title>Mon cv en ligne</title>
 </head>
+
 <body>
     <header>
         <nav>
-            <a href="#apropos" class="button-1">
-                <button class="navbutton">À propos</button></a>
+            <ul>
+                <li>
+                    <a href="#apropos">À propos</a>
 
-            <a href="#formation" class="button-2">
-                <button class="navbutton">Formations</button></a>
+                    <a href="#formation">Formations</a>
 
-            <a href="#competences" class="button-3">
-                <button class="navbutton">Compétences</button></a>
+                    <a href="#competences">Compétences</a>
 
-            <a href="#experiences" class="button-4">
-                <button class="navbutton">Expériences</button></a>
+                    <a href="#experiences">Expériences</a>
 
-            <a href="#contact" class="button-5">
-                <button class="navbutton">Contact</button></a>
+                    <a href="#contact">Contact</a>
+                </li>
+            </ul>
         </nav>
         <section>
             <h1>Florian Peaudecerf</h1>
         </section>
     </header>
     <section>
-        <a href="https://github.com/FlorianPeaudecerf" target="_blank"><img src="githubcat.png"></a>
-        <a href="https://www.linkedin.com/in/florian-peaudecerf/" target="_blank"><img src="linkedin.png"></a>
+        <a href="https://github.com/FlorianPeaudecerf" target="_blank"><img src="githubcat.png" alt="Logo GitHub"></a>
+        <a href="https://www.linkedin.com/in/florian-peaudecerf/" target="_blank"><img src="linkedin.png"
+                alt="Logo LinkedIn"></a>
         <p>Concepteur Développeur d'Application</p>
     </section>
     <div>
@@ -43,8 +45,7 @@
             métier. Étant en reconversion dans le domaine du numérique,fraîchement diplômé, je suis à
             la recherche d'un poste de concepteur
             développeur d'applications.</p>
-        <a href="images/cv.pdf" target="_blank" class="button-6">
-            <button class="navbutton">CV</button></a>
+        <a href="images/cv.pdf" target="_blank" class="button-6">CV</a>
     </div>
     <section id="formation">
         <h2>Formations</h2>
@@ -57,13 +58,15 @@
         </ul>
     </section>
     <section id="competences">
-        <h2>Compétences</h2>
-        <li>HTML5</li>
-        <li>CSS3</li>
-        <li>Javascript</li>
+        <h2>Competences</h2>
+        <ul>
+            <li>HTML5</li>
+            <li>CSS3</li>
+            <li>Javascript</li>
+        </ul>
     </section>
     <section id="experiences">
-        <h2>Expériences Professionnelles</h2>
+        <h2>Experiences Professionnelles</h2>
         <ul>
             <li>2019/2023 - Préparateur de commande/Répprovisionneur - E.LECLERC DRIVE SECLIN</li>
             <li>2015/2019 - Chef de rang - Restaurant Tomate Cerise NOYELLES-GODAULT</li>
@@ -78,31 +81,36 @@
             <input type="email" id="email" name="email" required>
             <label for="message">Message</label>
             <textarea id="message" name="message" required></textarea>
+            <label for="email">Adresse e-mail :
+            <input type="email" id="email" name="_replyto" required></label>
+            <button type="submit">Envoyer</button>            
         </form>
-    <section>
-        <a href="https://github.com/FlorianPeaudecerf" target="_blank"><img src="githubcat.png"></a>
-        <a href="https://www.linkedin.com/in/florian-peaudecerf/" target="_blank"><img src="linkedin.png"></a>
-    </section>
-    <section>
-        <button onclick="scrollToTop()" id="btnScrollToTop">Haut de page</button>
-        <script>
-            function scrollToTop() {
-                window.scrollTo({
-                    top: 0,
-                    behavior: "smooth"
-                });
-            }
-
-
-            window.onscroll = function() {
-                if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-                    document.getElementById("btnScrollToTop").style.display = "block";
-                } else {
-                    document.getElementById("btnScrollToTop").style.display = "none";
+        <section>
+            <a href="https://github.com/FlorianPeaudecerf" target="_blank"><img src="githubcat.png"
+                    alt="Logo GitHub"></a>
+            <a href="https://www.linkedin.com/in/florian-peaudecerf/" target="_blank"><img src="linkedin.png"
+                    alt="Logo LinkedIn"></a>
+        </section>
+        <section>
+            <button onclick="scrollToTop()" id="btnScrollToTop">Haut de page</button>
+            <script>
+                function scrollToTop() {
+                    window.scrollTo({
+                        top: 0,
+                        behavior: "smooth"
+                    });
                 }
-            };
-        </script>
-    </section>
+
+
+                window.onscroll = function () {
+                    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                        document.getElementById("btnScrollToTop").style.display = "block";
+                    } else {
+                        document.getElementById("btnScrollToTop").style.display = "none";
+                    }
+                };
+            </script>
+        </section>
     </footer>
 </body>
 
