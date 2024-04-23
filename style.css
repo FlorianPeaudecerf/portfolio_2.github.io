@@ -3,11 +3,29 @@ body {
 
 }
 
-nav {
+li a {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: end;
     align-content: center;
-    flex-direction: row;
+    flex-direction: column;
+    font-size: 30px;
+    color: rgb(14, 0, 211);
+    padding-top: 10px;
+    padding-bottom: 25px;
+    margin-top: 10px;
+    margin-bottom: 100px;
+    margin-left: 100px;
+    margin-right: 100px;
+    text-decoration:underline
+}
+
+nav li::before {
+    content: "\2022";
+    color: rgb(169, 169, 169);
+    font-weight: bold;
+    display: inline-block;
+    width: 1em;
+    margin-left: -1em;
 }
 
 nav a:hover {
@@ -98,11 +116,12 @@ h4::first-line {
     text-decoration: underline;
 }
 
-.button-6 {
+a:hover {
     display: flex;
     justify-content: center;
     align-content: center;
     flex-direction: column;
+    color: rgb(0, 143, 19);
     margin-top: 100px;
     margin-bottom: 100px;
     margin-left: 500px;
@@ -180,6 +199,13 @@ form {
     padding-left: 80px;
     padding-right: 25px;
 }
+
+#email {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
 #btnScrollToTop {
     display: none;
     position: fixed;
