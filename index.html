@@ -9,7 +9,9 @@
 </head>
 
 <body>
+
     <header>
+        <h1>FP</h1>
         <nav>
             <ul>
                 <li>
@@ -21,30 +23,34 @@
                 </li>
             </ul>
         </nav>
-        <section>
-            <h1>Florian Peaudecerf</h1>
-        </section>
+
+
+
     </header>
-    <section>
-        <a href="https://github.com/FlorianPeaudecerf" target="_blank"><img src="assets/githubcat.png" alt="Logo GitHub"></a>
-        <a href="https://www.linkedin.com/in/florian-peaudecerf/" target="_blank"><img src="assets/linkedin.png"
+
+    <section class="social-icons">
+        <a href="https://github.com/FlorianPeaudecerf" target="_blank"><img src="assets/githubcat.png" width="150px" 
+                alt="Logo GitHub"></a>
+                <p>Concepteur Développeur d'Applications</p>
+        <a href="https://www.linkedin.com/in/florian-peaudecerf/" target="_blank"><img src="assets/linkedin.png " width="150px"
                 alt="Logo LinkedIn"></a>
-        <p>Concepteur Développeur d'Applications</p>
     </section>
+    <section class="cv">
+        <a href="assets/cv.pdf" download="votre_cv.pdf">Télécharger mon CV</a></section>
     <section>
-        <img src="assets/new.jpg" alt="CV">
+        <img src="assets/new.jpg" alt="CV" width="300px" class="photo">
         <br>
         <h2 id="apropos">À propos :</h2>
-        <p>Je suis passionné d'informatique depuis mon
+        <p class="apropos">Je suis passionné d'informatique depuis mon
             adolescence, j'ai donc décidé de passer à
             l'action et de faire de ma passion mon
             métier. Étant en reconversion dans le domaine du numérique,fraîchement diplômé, je suis à
             la recherche d'un poste de concepteur
             développeur d'applications.</p>
         <a href="./assets/cv.pdf" target="_blank" class="button-6">CV</a>
-    </section>       
+    </section>
     <section id="formation">
-        <h2>Formations</h2>
+        <h2>Formations :</h2>
         <ul>
             <li>2024 - Concepteur Développeur d'Application - SIMPLON LENS HAUT DE FRANCE</li>
             <li>2024 - Développeur Back-End - SIMPLON LENS HAUT DE FRANCE</li>
@@ -54,7 +60,7 @@
         </ul>
     </section>
     <section id="competences">
-        <h2>Competences</h2>
+        <h2>Competences :</h2>
         <ul>
             <li>HTML5</li>
             <li>CSS3</li>
@@ -77,17 +83,24 @@
             <input type="email" id="email" name="email" required>
             <label for="message">Message</label>
             <textarea id="message" name="message" required></textarea>
-            <button type="submit">Envoyer</button>            
+            <button type="submit">Envoyer</button>
         </form>
-        <section>
-            <a href="https://github.com/FlorianPeaudecerf" target="_blank"><img src="githubcat.png"
+        <section class="icons-section">
+            <a href="https://github.com/FlorianPeaudecerf" target="_blank"><img src="assets/githubcat.png" width="150px"
                     alt="Logo GitHub"></a>
-            <a href="https://www.linkedin.com/in/florian-peaudecerf/" target="_blank"><img src="linkedin.png"
+            <a href="https://www.linkedin.com/in/florian-peaudecerf/" target="_blank"><img src="assets/linkedin.png" width="150px"
                     alt="Logo LinkedIn"></a>
         </section>
         <section>
-            
+            <section class="copyright">
+                <p>Copyright © 2024. Tous droits réservés.</p>
+            </section>
+            <section class="sticky-element">
+                <a href="#top" class="back-to-top">^</a>
+            </section>
         </section>
+
+
     </footer>
 </body>
 
